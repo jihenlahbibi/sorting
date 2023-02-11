@@ -1,0 +1,19 @@
+
+ALGORITHM Insertion sort 
+VAR
+ tab : ARRAY_OF float[];
+ n := tab.length -1
+ i,key ,j : INTEGER
+BEGIN
+     FOR i FROM 1 TO n STEP 1  DO
+     key:=tab[i];
+     j:i-1
+     WHILE (j>=0 and tab[j]> key) DO
+        tab[j+1]= tab[j];
+        j:=j-1
+     END_WHILE
+    tab [j+1]:= key 
+    END_FOR   
+    write (tab)
+END
+ 
